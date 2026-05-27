@@ -18,6 +18,7 @@ export type LeagueTableBodyProps = {
 export type Team = {
   position: number;
   club: string;
+  logo: string;
   matchesPlayed: number;
   wins: number;
   draws: number;

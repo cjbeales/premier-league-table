@@ -2,10 +2,15 @@ import { LeagueTable } from "@/components/LeagueTable";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-screen-2xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <LeagueTable />
-      </main>
+
+    <div className="relative flex flex-1 items-center justify-center">
+      <div className=" absolute inset-0 bg-[url('/pl-table-background.jpg')] bg-cover bg-center" />
+      <div className="absolute inset-0 bg-black/10" />
+      <div className="relative z-10">
+        <main className="flex flex-1 w-full max-w-screen-2xl flex-col items-center justify-between py-32 px-16 sm:items-start">
+          <LeagueTable />
+        </main>
+      </div>
     </div>
   );
 }

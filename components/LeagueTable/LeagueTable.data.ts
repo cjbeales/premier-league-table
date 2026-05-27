@@ -18,6 +18,7 @@ export const TEAMS: Team[] = [
   {
     position: 1,
     club: "Liverpool",
+    logo: "/club-logos/Liverpool.png",
     matchesPlayed: 25,
     wins: 18,
     draws: 6,
@@ -31,6 +32,7 @@ export const TEAMS: Team[] = [
   {
     position: 2,
     club: "Arsenal",
+    logo: "/club-logos/Arsenal.png",
     matchesPlayed: 25,
     wins: 15,
     draws: 8,
@@ -44,6 +46,7 @@ export const TEAMS: Team[] = [
   {
     position: 3,
     club: "Nottm Forest",
+    logo: "/club-logos/Nottingham-Forest.png",
     matchesPlayed: 25,
     wins: 14,
     draws: 5,
@@ -57,6 +60,7 @@ export const TEAMS: Team[] = [
   {
     position: 4,
     club: "Man City",
+    logo: "/club-logos/Manchester-City.png",
     matchesPlayed: 25,
     wins: 13,
     draws: 5,
@@ -70,6 +74,7 @@ export const TEAMS: Team[] = [
   {
     position: 5,
     club: "Bournemouth",
+    logo: "/club-logos/Bournemouth.png",
     matchesPlayed: 25,
     wins: 12,
     draws: 7,
@@ -83,6 +88,7 @@ export const TEAMS: Team[] = [
   {
     position: 6,
     club: "Chelsea",
+    logo: "/club-logos/Chelsea.png",
     matchesPlayed: 25,
     wins: 12,
     draws: 7,
@@ -96,6 +102,7 @@ export const TEAMS: Team[] = [
   {
     position: 7,
     club: "Newcastle",
+    logo: "/club-logos/Newcastle-United.png",
     matchesPlayed: 25,
     wins: 12,
     draws: 5,
@@ -109,6 +116,7 @@ export const TEAMS: Team[] = [
   {
     position: 8,
     club: "Fulham",
+    logo: "/club-logos/Fulham.png",
     matchesPlayed: 25,
     wins: 10,
     draws: 9,
@@ -122,6 +130,7 @@ export const TEAMS: Team[] = [
   {
     position: 9,
     club: "Aston Villa",
+    logo: "/club-logos/Aston-Villa.png",
     matchesPlayed: 25,
     wins: 10,
     draws: 8,
@@ -135,6 +144,7 @@ export const TEAMS: Team[] = [
   {
     position: 10,
     club: "Brighton",
+    logo: "/club-logos/Brighton.png",
     matchesPlayed: 25,
     wins: 9,
     draws: 10,
@@ -148,6 +158,7 @@ export const TEAMS: Team[] = [
   {
     position: 11,
     club: "Brentford",
+    logo: "/club-logos/Brentford.png",
     matchesPlayed: 25,
     wins: 10,
     draws: 4,
@@ -161,6 +172,7 @@ export const TEAMS: Team[] = [
   {
     position: 12,
     club: "Tottenham",
+    logo: "/club-logos/Tottenham.png",
     matchesPlayed: 25,
     wins: 9,
     draws: 3,
@@ -174,6 +186,7 @@ export const TEAMS: Team[] = [
   {
     position: 13,
     club: "Crystal Palace",
+    logo: "/club-logos/Crystal-Palace.png",
     matchesPlayed: 25,
     wins: 7,
     draws: 9,
@@ -187,6 +200,7 @@ export const TEAMS: Team[] = [
   {
     position: 14,
     club: "Everton",
+    logo: "/club-logos/Everton.png",
     matchesPlayed: 25,
     wins: 7,
     draws: 9,
@@ -200,6 +214,7 @@ export const TEAMS: Team[] = [
   {
     position: 15,
     club: "Man United",
+    logo: "/club-logos/Manchester-United.png",
     matchesPlayed: 25,
     wins: 8,
     draws: 5,
@@ -213,6 +228,7 @@ export const TEAMS: Team[] = [
   {
     position: 16,
     club: "West Ham",
+    logo: "/club-logos/West-Ham.png",
     matchesPlayed: 25,
     wins: 7,
     draws: 6,
@@ -226,6 +242,7 @@ export const TEAMS: Team[] = [
   {
     position: 17,
     club: "Wolves",
+    logo: "/club-logos/Wolves.png",
     matchesPlayed: 25,
     wins: 5,
     draws: 4,
@@ -239,6 +256,7 @@ export const TEAMS: Team[] = [
   {
     position: 18,
     club: "Ipswich Town",
+    logo: "/club-logos/Ipswich-Town.png",
     matchesPlayed: 25,
     wins: 3,
     draws: 8,
@@ -252,6 +270,7 @@ export const TEAMS: Team[] = [
   {
     position: 19,
     club: "Leicester City",
+    logo: "/club-logos/Leicester-City.png",
     matchesPlayed: 25,
     wins: 4,
     draws: 5,
@@ -265,6 +284,7 @@ export const TEAMS: Team[] = [
   {
     position: 20,
     club: "Southampton",
+    logo: "/club-logos/Southampton.png",
     matchesPlayed: 25,
     wins: 2,
     draws: 3,

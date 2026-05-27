@@ -1,12 +1,13 @@
 import { LeagueTableBodyProps } from "../LeagueTable.type";
 import classNames from "classnames";
 import { FormBadge } from "./FormBadge";
+import Image from "next/image";
 
 export const LeagueTableBody = ({
     data,
     tbodyClassNames = "border-t border-gray-200",
-    trClassNames = "px-4 py-3 font-medium",
-    tdClassNames = "px-4 py-3 text-primary",
+    trClassNames = "px-4 py-3 font-medium bg-primary/20",
+    tdClassNames = "px-4 py-3 text-white",
     formDisplayType = "short",
 }: LeagueTableBodyProps) => {
 
@@ -16,8 +17,11 @@ export const LeagueTableBody = ({
         <tbody className={tbodyClassNames}>
             {data.map((team) => (
                 <tr key={team.club} className={trClassNames}>
-                    <td className={tdClassNames}>{team.position}</td>
-                    <td className={tdClassNames}>{team.club}</td>
+                    <td className={classNames(tdClassNames, 'sticky left-0')}>{team.position}</td>
+                    <td className={classNames(tdClassNames, 'sticky left-[100px] flex items-center gap-2')}>
+                        <Image src={team.logo} alt={team.club} width={20} height={20} />
+                        {team.club}
+                    </td>
                     <td className={tdClassNames}>{team.matchesPlayed}</td>
                     <td className={tdClassNames}>{team.wins}</td>
                     <td className={tdClassNames}>{team.draws}</td>
