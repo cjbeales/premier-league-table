@@ -4,11 +4,15 @@ export type LeagueTableHeadProps = {
   thClassNames?: string;
 };
 
+export type FormDisplayType = "full" | "short";
+export type FormResult = Team["last5"][number];
+
 export type LeagueTableBodyProps = {
   data: Team[];
   tbodyClassNames?: string;
   trClassNames?: string;
   tdClassNames?: string;
+  formDisplayType?: FormDisplayType;
 };
 
 export type Team = {
@@ -23,4 +27,9 @@ export type Team = {
   goalDifference: number;
   points: number;
   last5: ("Win" | "Draw" | "Loss")[];
+};
+
+export type FormBadge = {
+  label: FormResult;
+  formDisplayType?: FormDisplayType;
 };

@@ -12,7 +12,6 @@ export const LEAGUE_TABLE_HEADERS = [
   "Goal difference",
   "Points",
   "Last 5",
-  "Hello",
 ];
 
 export const TEAMS: Team[] = [
