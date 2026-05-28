@@ -6,8 +6,8 @@ import Image from "next/image";
 export const LeagueTableBody = ({
     data,
     tbodyClassNames = "border-t border-gray-200",
-    trClassNames = "px-4 py-3 font-medium bg-primary/40 mb-2 border-b-2 border-red-500 overflow-x-auto",
-    tdClassNames = "py-3 text-white text-center ",
+    trClassNames = "px-4 py-3 font-medium bg-purple mb-2 border-b-2 border-red-500 overflow-x-auto",
+    tdClassNames = "py-3 text-white text-center bg-purple",
     formDisplayType = "short",
 }: LeagueTableBodyProps) => {
 
@@ -17,7 +17,7 @@ export const LeagueTableBody = ({
         <tbody className={tbodyClassNames}>
             {data.map((team) => (
                 <tr key={team.club} className={trClassNames}>
-                    <td className={classNames(tdClassNames, 'sticky left-0')}>{team.position}</td>
+                    <td className={classNames(tdClassNames, 'sticky left-0 max-w-[100px]')}>{team.position}</td>
                     <td className={classNames(tdClassNames, 'sticky left-[100px] min-w-[150px]')}>
                         <div className="flex items-center gap-2">
                             <Image src={team.logo} alt={team.club} width={20} height={20} />
