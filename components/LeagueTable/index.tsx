@@ -4,7 +4,7 @@ import { LEAGUE_TABLE_HEADERS, TEAMS } from "./LeagueTable.data";
 
 export const LeagueTable = () => {
     return (
-        <table className="min-w-[1700px] text-left text-sm overflow-x-auto border-separate border-spacing-y-2">
+        <table className="min-w-[1600px] text-left text-sm overflow-x-auto border-collapse">
             <LeagueTableHead headerItems={LEAGUE_TABLE_HEADERS} />
             <LeagueTableBody data={TEAMS} />
         </table>
