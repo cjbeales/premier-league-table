@@ -18,7 +18,7 @@ export const LeagueTableBody = ({
             {data.map((team) => (
                 <tr key={team.club} className={trClassNames}>
                     <td className={classNames(tdClassNames, 'sticky left-0')}>{team.position}</td>
-                    <td className={classNames(tdClassNames, 'sticky left-[110px]')}>
+                    <td className={classNames(tdClassNames, 'sticky left-24')}>
                         <div className="flex items-center gap-2 w-fit">
                             <Image src={team.logo} alt={team.club} width={20} height={20} />
                             {team.club}
