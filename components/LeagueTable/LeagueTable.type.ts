@@ -30,6 +30,11 @@ export type Team = {
   last5: ("Win" | "Draw" | "Loss")[];
 };
 
+export type LogoAndLabelProps = {
+  logo: string;
+  label: string;
+}
+
 export type FormBadge = {
   label: FormResult;
   formDisplayType?: FormDisplayType;

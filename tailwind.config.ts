@@ -11,7 +11,7 @@ const config: Config = {
         primary: "#171717",
         secondary: "#71717a",
         inverse: "#ffffff",
-        purple: "#595EC7",
+        purple: "#475291",
 
         surface: "#ffffff",
         surfaceSecondary: "#f4f4f5",
