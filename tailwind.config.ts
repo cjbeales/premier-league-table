@@ -9,16 +9,13 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#171717",
-        secondary: "#71717a",
-        inverse: "#ffffff",
         purple: "#475291",
-
-        surface: "#ffffff",
-        surfaceSecondary: "#f4f4f5",
-        surfaceDark: "#18181b",
-
-        brand: "#37003c",
-        accent: "#00ff87",
+        lightPurple: "#7B86BF",
+        blue: "#1822b9",
+        darkBlue: "#030543",
+        chamionsLeague: "#2038E2",
+        europaLeague: "#FC6D23",
+        conferenceLeague: "#1EBC28",
       },
     },
   },

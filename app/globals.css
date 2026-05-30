@@ -33,20 +33,20 @@ body {
 
 /*--- Low profile Scrollbar ---*/
 
-::webkit-scrollbar {
+::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-::webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::webkit-scrollbar-thumb {
-  background: rgba(133, 133, 122, 0.4);
-  border-radius: 100%;
+::-webkit-scrollbar-thumb {
+  background: rgba(113, 113, 122, 0.4);
+  border-radius: 9999px;
 }
 
-::webkit-scrollbar-thumb:hover {
-  background: rgba(133, 133, 122, 0.6);
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 113, 122, 0.6);
 }
