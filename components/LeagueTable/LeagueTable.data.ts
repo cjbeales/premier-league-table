@@ -1,17 +1,17 @@
 import { Team } from "./LeagueTable.type";
 
 export const LEAGUE_TABLE_HEADERS = [
-  "Position",
-  "Club",
-  "Matches played",
-  "Wins",
-  "Draws",
-  "Losses",
-  "Goals scored",
-  "Goals against",
-  "Goal difference",
-  "Points",
-  "Last 5",
+  { full: "Position", short: "Pos" },
+  { full: "Club", short: "Club" },
+  { full: "Matches played", short: "Pl" },
+  { full: "Wins", short: "W" },
+  { full: "Draws", short: "D" },
+  { full: "Losses", short: "L" },
+  { full: "Goals scored", short: "GF" },
+  { full: "Goals against", short: "GA" },
+  { full: "Goal difference", short: "GD" },
+  { full: "Points", short: "Pts" },
+  { full: "Last 5", short: "Form" },
 ];
 
 export const TEAMS: Team[] = [

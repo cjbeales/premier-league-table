@@ -1,5 +1,6 @@
 export type LeagueTableHeadProps = {
-  headerItems: string[];
+  headerDisplayType: "full" | "short";
+  headerItems: { full: string; short: string }[];
   theadClassNames?: string;
   thClassNames?: string;
 };

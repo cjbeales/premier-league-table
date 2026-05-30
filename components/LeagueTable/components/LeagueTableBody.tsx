@@ -7,7 +7,7 @@ export const LeagueTableBody = ({
     data,
     tbodyClassNames = "border-t border-gray-200",
     trClassNames = "px-4 py-3 text-base bg-darkBlue overflow-x-auto",
-    tdClassNames = classNames("p-3 text-white text-center bg-darkBlue max-w-fit border-b border-lightPurple"),
+    tdClassNames = classNames("p-3 text-white text-center bg-darkBlue border-b border-lightPurple"),
     formDisplayType = "short",
 }: LeagueTableBodyProps) => {
 
@@ -15,7 +15,7 @@ export const LeagueTableBody = ({
         <tbody className={tbodyClassNames}>
             {data.map((team) => {
 
-                const positionBackgroundClass = classNames('border-l-3', {
+                const positionBorderClass = classNames('border-l-3', {
                     "border-l-championsLeague!": team.position <= 5,
                     "border-l-europaLeague!": team.position === 6 || team.position === 7,
                     "border-l-conferenceLeague!": team.position === 8,
@@ -25,8 +25,8 @@ export const LeagueTableBody = ({
 
                 return (
                     <tr key={team.club} className={trClassNames}>
-                        <td className={classNames(tdClassNames, positionBackgroundClass, 'sticky left-0')}>{team.position}</td>
-                        <td className={classNames(tdClassNames, 'sticky left-24')}>
+                        <td className={classNames(tdClassNames, positionBorderClass, 'sticky left-0')}>{team.position}</td>
+                        <td className={classNames(tdClassNames, 'sticky left-24 w-[200px]')}>
                             <LogoAndLabel logo={team.logo} label={team.club} />
                         </td>
                         <td className={tdClassNames}>{team.matchesPlayed}</td>
@@ -37,14 +37,16 @@ export const LeagueTableBody = ({
                         <td className={tdClassNames}>{team.goalsAgainst}</td>
                         <td className={tdClassNames}>{team.goalDifference}</td>
                         <td className={tdClassNames}>{team.points}</td>
-                        <td className={classNames(tdClassNames, "flex items-center justify-center gap-1 min-h-[61px] max-w-full")}>
-                            {team.last5.map((result, index) => (
-                                <FormBadge
-                                    key={`${team.club}-${index}`}
-                                    label={result}
-                                    formDisplayType={formDisplayType}
-                                />
-                            ))}
+                        <td className={classNames(tdClassNames, "w-[220px] min-h-[61px]")}>
+                            <div className="flex items-center justify-center gap-1">
+                                {team.last5.map((result, index) => (
+                                    <FormBadge
+                                        key={`${team.club}-${index}`}
+                                        label={result}
+                                        formDisplayType={formDisplayType}
+                                    />
+                                ))}
+                            </div>
                         </td>
                     </tr>
                 )
