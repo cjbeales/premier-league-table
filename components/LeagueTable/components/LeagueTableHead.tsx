@@ -13,7 +13,6 @@ export const LeagueTableHead = ({
           <th key={header} className={classNames(thClassNames, {
             'sticky left-0 w-24 z-30': header === 'Position',
             'sticky left-24 z-30 text-left': header === 'Club',
-            'text-left': header === 'Last 5',
           })}>
             {header}
           </th>

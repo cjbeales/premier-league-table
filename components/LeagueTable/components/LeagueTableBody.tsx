@@ -37,7 +37,7 @@ export const LeagueTableBody = ({
                         <td className={tdClassNames}>{team.goalsAgainst}</td>
                         <td className={tdClassNames}>{team.goalDifference}</td>
                         <td className={tdClassNames}>{team.points}</td>
-                        <td className={classNames(tdClassNames, "flex items-center gap-1 min-h-[61px]")}>
+                        <td className={classNames(tdClassNames, "flex items-center justify-center gap-1 min-h-[61px] max-w-full")}>
                             {team.last5.map((result, index) => (
                                 <FormBadge
                                     key={`${team.club}-${index}`}
