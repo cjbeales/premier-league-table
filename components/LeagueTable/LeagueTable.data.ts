@@ -17,6 +17,7 @@ export const LEAGUE_TABLE_HEADERS = [
 export const TEAMS: Team[] = [
   {
     position: 1,
+    movement: "neutral",
     club: "Liverpool",
     logo: "/club-logos/Liverpool.png",
     matchesPlayed: 25,
@@ -31,6 +32,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 2,
+    movement: "up",
     club: "Arsenal",
     logo: "/club-logos/Arsenal.png",
     matchesPlayed: 25,
@@ -45,6 +47,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 3,
+    movement: "neutral",
     club: "Nottm Forest",
     logo: "/club-logos/Nottingham-Forest.png",
     matchesPlayed: 25,
@@ -59,6 +62,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 4,
+    movement: "neutral",
     club: "Man City",
     logo: "/club-logos/Manchester-City.png",
     matchesPlayed: 25,
@@ -73,6 +77,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 5,
+    movement: "up",
     club: "Bournemouth",
     logo: "/club-logos/Bournemouth.png",
     matchesPlayed: 25,
@@ -87,6 +92,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 6,
+    movement: "up",
     club: "Chelsea",
     logo: "/club-logos/Chelsea.png",
     matchesPlayed: 25,
@@ -101,6 +107,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 7,
+    movement: "down",
     club: "Newcastle",
     logo: "/club-logos/Newcastle-United.png",
     matchesPlayed: 25,
@@ -115,6 +122,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 8,
+    movement: "down",
     club: "Fulham",
     logo: "/club-logos/Fulham.png",
     matchesPlayed: 25,
@@ -129,6 +137,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 9,
+    movement: "up",
     club: "Aston Villa",
     logo: "/club-logos/Aston-Villa.png",
     matchesPlayed: 25,
@@ -143,6 +152,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 10,
+    movement: "neutral",
     club: "Brighton",
     logo: "/club-logos/Brighton.png",
     matchesPlayed: 25,
@@ -157,6 +167,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 11,
+    movement: "down",
     club: "Brentford",
     logo: "/club-logos/Brentford.png",
     matchesPlayed: 25,
@@ -171,6 +182,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 12,
+    movement: "down",
     club: "Tottenham",
     logo: "/club-logos/Tottenham.png",
     matchesPlayed: 25,
@@ -185,6 +197,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 13,
+    movement: "neutral",
     club: "Crystal Palace",
     logo: "/club-logos/Crystal-Palace.png",
     matchesPlayed: 25,
@@ -199,6 +212,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 14,
+    movement: "neutral",
     club: "Everton",
     logo: "/club-logos/Everton.png",
     matchesPlayed: 25,
@@ -213,6 +227,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 15,
+    movement: "down",
     club: "Man United",
     logo: "/club-logos/Manchester-United.png",
     matchesPlayed: 25,
@@ -227,6 +242,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 16,
+    movement: "down",
     club: "West Ham",
     logo: "/club-logos/West-Ham.png",
     matchesPlayed: 25,
@@ -241,6 +257,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 17,
+    movement: "down",
     club: "Wolves",
     logo: "/club-logos/Wolves.png",
     matchesPlayed: 25,
@@ -255,6 +272,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 18,
+    movement: "down",
     club: "Ipswich Town",
     logo: "/club-logos/Ipswich-Town.png",
     matchesPlayed: 25,
@@ -269,6 +287,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 19,
+    movement: "down",
     club: "Leicester City",
     logo: "/club-logos/Leicester-City.png",
     matchesPlayed: 25,
@@ -283,6 +302,7 @@ export const TEAMS: Team[] = [
   },
   {
     position: 20,
+    movement: "down",
     club: "Southampton",
     logo: "/club-logos/Southampton.png",
     matchesPlayed: 25,

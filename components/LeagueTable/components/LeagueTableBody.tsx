@@ -2,6 +2,7 @@ import { LeagueTableBodyProps } from "../LeagueTable.type";
 import classNames from "classnames";
 import { FormBadge } from "./FormBadge";
 import { LogoAndLabel } from "./LogoAndLabel";
+import { MovementIndicator } from "./MovementIndicator";
 
 export const LeagueTableBody = ({
     data,
@@ -25,7 +26,12 @@ export const LeagueTableBody = ({
 
                 return (
                     <tr key={team.club} className={trClassNames}>
-                        <td className={classNames(tdClassNames, positionBorderClass, 'sticky left-0')}>{team.position}</td>
+                        <td className={classNames(tdClassNames, positionBorderClass, 'sticky left-0')}>
+                            <div className="flex items-center justify-center gap-2">
+                                {team.position}
+                                <MovementIndicator movement={team.movement} />
+                            </div>
+                        </td>
                         <td className={classNames(tdClassNames, 'sticky left-24 w-[200px]')}>
                             <LogoAndLabel logo={team.logo} label={team.club} />
                         </td>
