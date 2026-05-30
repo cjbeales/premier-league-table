@@ -11,16 +11,14 @@ export const LeagueTableBody = ({
     formDisplayType = "short",
 }: LeagueTableBodyProps) => {
 
-
-
     return (
         <tbody className={tbodyClassNames}>
             {data.map((team) => {
 
-                const positionBackgroundClass = classNames('border-l-2', {
-                    "border-l-green-500!": team.position <= 5,
-                    "border-l-amber-300!": team.position === 6 || team.position === 7,
-                    "border-l-orange-400!": team.position === 8,
+                const positionBackgroundClass = classNames('border-l-3', {
+                    "border-l-championsLeague!": team.position <= 5,
+                    "border-l-europaLeague!": team.position === 6 || team.position === 7,
+                    "border-l-conferenceLeague!": team.position === 8,
                     "border-l-red-500!": team.position >= 18,
                     "border-l-darkBlue": team.position > 5 && team.position < 18,
                 });

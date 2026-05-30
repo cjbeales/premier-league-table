@@ -13,7 +13,7 @@ const config: Config = {
         lightPurple: "#7B86BF",
         blue: "#1822b9",
         darkBlue: "#030543",
-        chamionsLeague: "#2038E2",
+        championsLeague: "#2038E2",
         europaLeague: "#FC6D23",
         conferenceLeague: "#1EBC28",
       },

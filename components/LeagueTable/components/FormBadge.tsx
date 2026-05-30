@@ -11,8 +11,11 @@ export const FormBadge = ({ label, formDisplayType = "short" }: FormBadgeType) =
 
     return (
         <span
-            className={classNames(`flex items-center justify-center w-8 h-8 rounded-full text-xs font-medium bg-[#eee]`, {
+            className={classNames(`flex items-center justify-center w-8 h-8 rounded-full text-xs font-semibold`, {
                 "w-10 h-10": formDisplayType === "full",
+                "bg-green-500": label === "Win",
+                "bg-red-400": label === "Loss",
+                "bg-white text-primary": label === "Draw",
             })}
         >
             {formDisplayType === "short"

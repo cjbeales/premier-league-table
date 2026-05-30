@@ -3,8 +3,8 @@ import classNames from "classnames";
 
 export const LeagueTableHead = ({
   headerItems,
-  theadClassNames = "text-center text-base text-primary",
-  thClassNames = "sticky top-0 z-10 bg-blue text-white p-4 min-w-fit max-w-fit",
+  theadClassNames = "text-center sticky top-0 z-10 text-white",
+  thClassNames = "bg-blue p-4 min-w-fit max-w-fit",
 }: LeagueTableHeadProps) => {
   return (
     <thead className={theadClassNames}>
