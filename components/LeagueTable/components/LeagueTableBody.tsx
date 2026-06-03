@@ -7,7 +7,7 @@ import { MovementIndicator } from "./MovementIndicator";
 export const LeagueTableBody = ({
     data,
     tbodyClassNames = "border-t border-gray-200",
-    trClassNames = "px-4 py-3 text-base bg-darkBlue overflow-x-auto",
+    trClassNames = "px-4 py-3 text-base bg-darkBlue",
     tdClassNames = classNames("p-3 text-white text-center bg-darkBlue border-b border-lightPurple"),
     formDisplayType = "short",
 }: LeagueTableBodyProps) => {
@@ -26,13 +26,20 @@ export const LeagueTableBody = ({
 
                 return (
                     <tr key={team.club} className={trClassNames}>
-                        <td className={classNames(tdClassNames, positionBorderClass, 'sticky left-0')}>
+                        <td className={classNames(
+                            tdClassNames,
+                            positionBorderClass,
+                            "sticky left-0 z-20 w-24 max-sm:w-12 max-sm:min-w-12 max-sm:max-w-12 max-sm:px-4 max-sm:py-2",
+                        )}>
                             <div className="flex items-center justify-center gap-2">
                                 {team.position}
                                 <MovementIndicator movement={team.movement} />
                             </div>
                         </td>
-                        <td className={classNames(tdClassNames, 'sticky left-24 w-[200px]')}>
+                        <td className={classNames(
+                            tdClassNames,
+                            "sticky left-24 max-sm:left-12 z-10 w-[200px] min-w-[200px] max-sm:w-[120px] max-sm:min-w-[120px] text-left",
+                        )}>
                             <LogoAndLabel logo={team.logo} label={team.club} />
                         </td>
                         <td className={tdClassNames}>{team.matchesPlayed}</td>
