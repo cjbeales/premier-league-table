@@ -1,0 +1,31 @@
+@use "utilities/breakpoints" as bp;
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  z-index: 10;
+}
+
+.tableWrapper {
+  position: relative;
+  padding: 32px;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  @include bp.screen(md) {
+    padding: 40px;
+  }
+}
