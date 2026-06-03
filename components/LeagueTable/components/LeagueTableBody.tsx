@@ -1,7 +1,7 @@
 import { LeagueTableBodyProps } from "../LeagueTable.type";
 import classNames from "classnames";
-import { FormBadge } from "./FormBadge";
-import { LogoAndLabel } from "./LogoAndLabel";
+import { FormBadge } from "./FormBadge/FormBadge";
+import { LogoAndLabel } from "./LogoAndLabel/LogoAndLabel";
 import { MovementIndicator } from "./MovementIndicator";
 
 export const LeagueTableBody = ({

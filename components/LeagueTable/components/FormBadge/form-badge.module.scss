@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.full {
+  @extend .wrapper;
+  width: 40px;
+  height: 40px;
+}
+
+.win {
+  @extend .wrapper;
+  background: #00c951;
+}
+
+.loss {
+  @extend .wrapper;
+  background: #ff6467;
+}
+
+.draw {
+  @extend .wrapper;
+  background: white;
+  color: #222;
+}

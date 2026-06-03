@@ -1,22 +1,23 @@
 import Image from "next/image";
-import { LogoAndLabelProps } from "../LeagueTable.type";
+import { LogoAndLabelProps } from "../../LeagueTable.type";
+import styles from "./logo-and-label.module.scss";
 
 export const LogoAndLabel = ({
     logo,
     label,
 }: LogoAndLabelProps) => {
     return (
-        <div className="flex items-center gap-2 w-fit">
-            <div className="flex h-9 w-9 shrink-0 items-center justify-center">
+        <div className={styles.wrapper}>
+            <div className={styles.container}>
                 <Image
                     src={logo}
                     alt={`${label} badge`}
                     width={36}
                     height={36}
-                    className="h-8 w-8 object-contain"
+                    className={styles.image}
                 />
             </div>
-            <span className="font-semibold">{label}</span>
+            <span className={styles.label}>{label}</span>
         </div>
     );
 };
