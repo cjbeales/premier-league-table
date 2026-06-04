@@ -9,7 +9,7 @@ export default function Home() {
 
       <div className="relative z-10 flex shrink-0 flex-col items-center gap-6">
         <Image src="/pl-logo-dark.svg" alt="Premier League Table 2024/25" width={208} height={86} />
-        <h1 className="text-center text-2xl font-bold text-white">
+        <h1 className="text-center text-xl md:text-2xl font-bold text-white">
           Premier League Table 2024/2025
         </h1>
       </div>
