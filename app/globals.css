@@ -36,7 +36,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Lock page scroll on mobile — only .league-table-scroll moves */
+/* -- Locks the page on mobile to avoid the table moving with overscroll. */
 @media (max-width: 767px) {
   html,
   body {
