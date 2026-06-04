@@ -29,7 +29,7 @@ export const LeagueTableBody = ({
                         <td className={classNames(
                             tdClassNames,
                             positionBorderClass,
-                            "sticky left-0 z-20 w-24 max-sm:w-14 max-sm:min-w-14 max-sm:max-w-14 max-sm:px-4 max-sm:py-2",
+                            "sticky left-0 z-20 w-24 max-sm:w-14 max-sm:min-w-14 max-sm:max-w-14 max-sm:px-0 max-sm:py-2",
                         )}>
                             <div className="flex items-center justify-center gap-1 md:gap-2">
                                 {team.position}
