@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden p-8 md:p-10">
+    <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden overscroll-none p-8 md:p-10">
       <div className="absolute inset-0 bg-[url('/pl-bg-blue.jpg')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-black/10" />
 
@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="relative z-10 mt-8 flex min-h-0 flex-1 flex-col">
+      <div className="relative z-10 mt-8 flex min-h-0 flex-1 flex-col overscroll-none">
         <main className="mx-auto w-full min-h-0 max-w-screen-xl flex-1">
           <LeagueTable />
         </main>

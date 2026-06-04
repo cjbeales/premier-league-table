@@ -1,27 +1,24 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
-const MOBILE_MAX_WIDTH = 767;
+const MOBILE_QUERY = "(max-width: 767px)";
 
-function getIsMobile() {
-  return window.innerWidth <= MOBILE_MAX_WIDTH;
+function subscribe(onChange) {
+  const mediaQuery = window.matchMedia(MOBILE_QUERY);
+  mediaQuery.addEventListener("change", onChange);
+  return () => mediaQuery.removeEventListener("change", onChange);
+}
+
+function getSnapshot() {
+  return window.matchMedia(MOBILE_QUERY).matches;
+}
+
+/** Always false on the server so SSR matches the client's first paint. */
+function getServerSnapshot() {
+  return false;
 }
 
 export const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(() => {
-    if (typeof window === "undefined") return false;
-    return getIsMobile();
-  });
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(getIsMobile());
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  return isMobile;
+  return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 };
