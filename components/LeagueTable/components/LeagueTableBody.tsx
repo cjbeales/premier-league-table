@@ -29,16 +29,16 @@ export const LeagueTableBody = ({
                         <td className={classNames(
                             tdClassNames,
                             positionBorderClass,
-                            "sticky left-0 z-20 w-24 max-sm:w-12 max-sm:min-w-12 max-sm:max-w-12 max-sm:px-4 max-sm:py-2",
+                            "sticky left-0 z-20 w-24 max-sm:w-14 max-sm:min-w-14 max-sm:max-w-14 max-sm:px-4 max-sm:py-2",
                         )}>
-                            <div className="flex items-center justify-center gap-2">
+                            <div className="flex items-center justify-center gap-1 md:gap-2">
                                 {team.position}
                                 <MovementIndicator movement={team.movement} />
                             </div>
                         </td>
                         <td className={classNames(
                             tdClassNames,
-                            "sticky left-24 max-sm:left-12 z-10 w-[200px] min-w-[200px] max-sm:w-[120px] max-sm:min-w-[120px] text-left",
+                            "sticky left-24 max-sm:left-14 z-10 w-[200px] min-w-[200px] max-sm:w-[120px] max-sm:min-w-[120px] text-left",
                         )}>
                             <LogoAndLabel logo={team.logo} label={team.club} />
                         </td>
