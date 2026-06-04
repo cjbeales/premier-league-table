@@ -8,7 +8,7 @@ export const LeagueTableBody = ({
     data,
     tbodyClassNames = "border-t border-gray-200",
     trClassNames = "px-4 py-3 text-base bg-darkBlue",
-    tdClassNames = classNames("p-3 text-white text-center bg-darkBlue border-b border-lightPurple"),
+    tdClassNames = classNames("p-3 text-white text-center bg-darkBlue border-b border-lightPurple max-sm:text-xs max-sm:px-0"),
     formDisplayType = "short",
 }: LeagueTableBodyProps) => {
 

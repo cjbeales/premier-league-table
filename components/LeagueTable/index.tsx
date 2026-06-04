@@ -8,7 +8,7 @@ export const LeagueTable = () => {
     const isMobile = useIsMobile();
 
     return (
-        <div className="w-full min-w-0 overflow-x-auto">
+        <div className="max-h-[72vh] w-full min-w-0 overflow-auto">
             <table className="min-w-[1600px] w-full text-left text-sm border-separate border-spacing-0">
                 <LeagueTableHead headerDisplayType={isMobile ? "short" : "full"} headerItems={LEAGUE_TABLE_HEADERS} />
                 <LeagueTableBody data={TEAMS} />
